@@ -5,13 +5,17 @@
 
 ## Redux
 
-* [1. Redux 추상화](redux/1.-redux.md)
-* [2. API Reference](redux/2.-api-reference.md)
+* [1. API Reference](redux/1.-api-reference.md)
 * [createStore](redux/createstore.md)
+* [Store](redux/store.md)
+* [combineReducers](redux/combinereducers.md)
+* [applyMiddleware](redux/applymiddleware.md)
+* [bindActionCreators](redux/bindactioncreators.md)
+* [compose](redux/compose.md)
 
 ## Redux Thunk
 
-* [1. Redux Thunk 추상화](redux-thunk/1.-redux-thunk.md)
+* [Redux Thunk](redux-thunk/1.-redux-thunk.md)
 
 ## Redux Toolkit
 
