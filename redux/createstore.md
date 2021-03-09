@@ -2,7 +2,7 @@
 
 ## `createStore(reducer, [preloadedState], [enhancer])`
 
-리덕스의 store를 생산합니. redux에서는 **하나의 store만** 사용하기를 **강력히 권장합니다.** 
+리덕스의 store를 생산합니다. redux에서는 **하나의 store만** 사용하기를 **강력히 권장합니다.** 
 
 ### [reducer](../dictionary/example-code.md#reducer)
 
@@ -14,11 +14,11 @@ createStore를 실행시키면 최초에 한번 reducer가 작동됩니다.
 
 ### preloadedState
 
-최초의 상태를 정의 할 수 있습니. 만약 [combineReducers](combinereducers.md)로 reducer를 만들었다면 그에 대응하는 최초의 상태를 정의해줘야 합니다. 
+최초의 상태를 정의 할 수 있습니다. 만약 [combineReducers](combinereducers.md)로 reducer를 만들었다면 그에 대응하는 최초의 상태를 정의해줘야 합니다. 
 
 ### enhancer
 
-추가적인 third party를 사용할수 있습니. redux에서 기본적으로 제공되는 인핸서는 [applyMiddleware](applymiddleware.md)가 있습니다. 여러가지 enhancer를 사용하고 싶다 compose를 사용하여 결합할수 있습니. 
+추가적인 third party를 사용할수 있습니다. redux에서 기본적으로 제공되는 인핸서는 [applyMiddleware](applymiddleware.md)가 있습니다. 여러가지 enhancer를 사용하고 싶다 compose를 사용하여 결합할수 있습니다. 
 
 ```typescript
 if (typeof enhancer !== 'undefined') {
