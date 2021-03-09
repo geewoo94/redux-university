@@ -20,6 +20,21 @@ createStore를 실행시키면 최초에 한번 reducer가 작동됩니다.
 
 추가적인 third party를 사용할수 있습니. redux에서 기본적으로 제공되는 인핸서는 [applyMiddleware](applymiddleware.md)가 있습니다. 여러가지 enhancer를 사용하고 싶다 compose를 사용하여 결합할수 있습니. 
 
+```typescript
+if (typeof enhancer !== 'undefined') {
+  if (typeof enhancer !== 'function') {
+    throw new Error('Expected the enhancer to be a function.')
+  }
+
+  return enhancer(createStore)(
+    reducer,
+    preloadedState
+  )
+}
+```
+
+위 코드는 redux 소스코드 입니다. enhancer는 createStore를 받는 HOF입니다. 
+
 #### 예
 
 ```typescript
