@@ -5,7 +5,7 @@
 
 ## Redux
 
-* [1. API Reference](redux/1.-api-reference.md)
+* [Redux API Reference](redux/1.-api-reference.md)
 * [createStore](redux/createstore.md)
 * [Store](redux/store.md)
 * [combineReducers](redux/combinereducers.md)
@@ -19,7 +19,7 @@
 
 ## Redux Toolkit
 
-* [1. Redux Toolkit 추상화](redux-toolkit/1.-redux-toolkit.md)
+* [Redux Toolkit API Reference](redux-toolkit/1.-redux-toolkit.md)
 
 ## Redux Saga
 
