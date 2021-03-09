@@ -4,7 +4,6 @@
 
 ```typescript
 type action = { type: string, payload: number };
-type state = number;
 
 const counter = (state = 0, action) => {
     // state === store.getState()
@@ -15,6 +14,9 @@ const counter = (state = 0, action) => {
         case 'DECREASE':
             return action.payload
         default:
+            //createStore를 실행 했을때 최초로 한번 reducer를 실행시킵니다.
+            //createStore의 두번째 인자를 주고싶지 않다면 이곳에서 최초의
+            //reducer state를 반환해줘야 합니다.
             return state
 }
 ```
